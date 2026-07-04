@@ -9,13 +9,11 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
 			:root {
-				--bridge-navy: #062b55;
-				--bridge-blue: #0562a8;
-				--bridge-sky: #6f9bb7;
-				--bridge-red: #cf334d;
-				--bridge-light-red: #d6737a;
-				--bridge-sand: #f4f8fb;
-				--bridge-ink: #26394f;
+				--bridge-navy: #1c3557;
+				--bridge-blue: #2d5d8c;
+				--bridge-gold: #c6a96a;
+				--bridge-sand: #f7f3eb;
+				--bridge-ink: #3e4a59;
 			}
 
 			body {
@@ -27,7 +25,7 @@
 			}
 
 			a:hover {
-				color: var(--bridge-red) !important;
+				color: var(--bridge-gold) !important;
 			}
 
 			#header h1 a,
@@ -55,8 +53,8 @@
 			input[type="reset"]:hover,
 			input[type="button"]:hover,
 			button:hover {
-				box-shadow: inset 0 0 0 1px var(--bridge-red);
-				color: var(--bridge-red) !important;
+				box-shadow: inset 0 0 0 1px var(--bridge-gold);
+				color: var(--bridge-gold) !important;
 			}
 
 			.bridge-mark {
@@ -65,8 +63,8 @@
 				width: 100%;
 				min-height: 10rem;
 				padding: 2rem;
-				border: 1px solid rgba(6, 43, 85, 0.16);
-				background: #ffffff;
+				border: 1px solid rgba(28, 53, 87, 0.12);
+				background: linear-gradient(135deg, rgba(28, 53, 87, 0.06), rgba(198, 169, 106, 0.14));
 				text-align: center;
 			}
 
@@ -111,8 +109,8 @@
 			}
 
 			.hero-banner .button:hover {
-				box-shadow: inset 0 0 0 1px var(--bridge-red);
-				color: var(--bridge-red) !important;
+				box-shadow: inset 0 0 0 1px var(--bridge-gold);
+				color: var(--bridge-gold) !important;
 			}
 
 			.section-tag {
@@ -166,8 +164,8 @@
 			.notice {
 				margin-top: 1rem;
 				padding: 0.9rem 1rem;
-				background: rgba(207, 51, 77, 0.08);
-				border-left: 4px solid var(--bridge-red);
+				background: rgba(198, 169, 106, 0.12);
+				border-left: 4px solid var(--bridge-gold);
 				font-size: 0.92rem;
 			}
 
@@ -176,84 +174,9 @@
 				color: rgba(62, 74, 89, 0.8);
 			}
 
-
-			#header {
-				border-bottom: 3px solid var(--bridge-red);
-			}
-
-			#header h1 a {
-				letter-spacing: 0.12em;
-			}
-
-			.logo-img {
-				display: block;
-				width: 100%;
-				max-width: 18rem;
-				height: auto;
-				margin: 0 auto;
-			}
-
-			.relief-card {
-				display: grid;
-				grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-				gap: 2rem;
-				align-items: center;
-			}
-
-			.relief-card img {
-				display: block;
-				width: 100%;
-				border-radius: 0.35rem;
-				border: 1px solid rgba(6, 43, 85, 0.12);
-				box-shadow: 0 0.35rem 1.25rem rgba(6, 43, 85, 0.12);
-			}
-
-			.relief-panel {
-				padding: 2rem;
-				background: linear-gradient(135deg, rgba(6, 43, 85, 0.96), rgba(5, 98, 168, 0.94));
-				border-radius: 0.35rem;
-				color: #ffffff;
-			}
-
-			.relief-panel h2,
-			.relief-panel p,
-			.relief-panel li,
-			.relief-panel .section-tag {
-				color: #ffffff !important;
-			}
-
-			.relief-panel .button {
-				background: var(--bridge-red);
-				box-shadow: inset 0 0 0 1px var(--bridge-red);
-				color: #ffffff !important;
-			}
-
-			.relief-panel .button:hover {
-				background: #ffffff;
-				box-shadow: inset 0 0 0 1px #ffffff;
-				color: var(--bridge-navy) !important;
-			}
-
-			.site-footer-card {
-				margin-top: 2rem;
-				padding: 1.25rem;
-				background: #ffffff;
-				border: 1px solid rgba(6, 43, 85, 0.12);
-				text-align: center;
-				border-radius: 0.3rem;
-			}
-
-			.site-footer-card .copyright {
-				margin: 0;
-				font-size: 0.85rem;
-				letter-spacing: 0.08em;
-			}
-
-
 			@media screen and (max-width: 980px) {
 				.impact-grid,
-				.services-grid,
-				.relief-card {
+				.services-grid {
 					grid-template-columns: 1fr;
 				}
 
@@ -269,14 +192,22 @@
 
 			<header id="header">
 				<h1><a href="#top">Bridge Immigration Network</a></h1>
-				<nav class="links">
+				<!-- <nav class="links">
 					<ul>
-						<li><a href="#top">Home</a></li>
-						<li><a href="#relief">Relief Campaign</a></li>
 						<li><a href="#mission">Mission</a></li>
+						<li><a href="#values">Values</a></li>
+						<li><a href="#support">Support</a></li>
+						<li><a href="#services">Services</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
-				</nav>
+				</nav> -->
+				<!-- <nav class="main">
+					<ul>
+						<li class="menu">
+							<a class="fa-bars" href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav> -->
 			</header>
 
 			<!-- <section id="menu">
@@ -307,41 +238,10 @@
 						<span class="section-tag">Welcome</span>
 						<h2>Building lawful pathways with clarity, trust, and hope</h2>
 						<p>BRIDGE Immigration Network, Inc. provides affordable, high-quality immigration support through knowledgeable guidance, community education, and trusted advocacy. We help immigrant individuals and families understand their options, avoid fraud, and move forward with confidence.</p>
-						<ul class="actions">
+						<!-- <ul class="actions">
 							<li><a href="#contact" class="button large">Request Information</a></li>
-							<li><a href="#relief" class="button large">Earthquake Relief</a></li>
-						</ul>
-					</div>
-				</article>
-
-				<article class="post" id="relief">
-					<header>
-						<div class="title">
-							<span class="section-tag">Emergency Earthquake Relief</span>
-							<h2>Donate to support Venezuela</h2>
-							<p>Providing direct support through trusted local partners delivering emergency relief to families, hospitals, and communities affected by the earthquake in Venezuela.</p>
-						</div>
-					</header>
-					<div class="relief-card">
-						<img src="images/venezuela-relief-campaign.png" alt="Emergency Earthquake Relief for Venezuela campaign graphic" />
-						<div class="relief-panel">
-							<span class="section-tag">Together, we bring hope. Together, we bring relief.</span>
-							<h2>Thousands of families need urgent help.</h2>
-							<p>The devastation caused by the recent earthquake in Venezuela is beyond comprehension. Thousands of families have lost their homes, access to clean water, food, medical care, and basic necessities.</p>
-							<p>BRIDGE Immigration Network is working directly with trusted partners on the ground to provide immediate humanitarian relief where it is needed most.</p>
-							<p><strong>Your donation will help provide:</strong></p>
-							<ul>
-								<li>Emergency supplies for displaced families</li>
-								<li>Hygiene kits</li>
-								<li>Diapers and baby essentials</li>
-								<li>Medical supplies</li>
-								<li>Clean water and recovery equipment</li>
-							</ul>
-							<p>Every dollar makes a difference. Thank you for standing with Venezuela.</p>
-							<ul class="actions">
-								<li><a href="https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-17131" class="button large" target="_blank" rel="noopener">Donate Through Zeffy</a></li>
-							</ul>
-						</div>
+							<li><a href="#donate" class="button large">Support BRIDGE</a></li>
+						</ul> -->
 					</div>
 				</article>
 
@@ -355,23 +255,6 @@
 					</header>
 					<p><strong>Mission:</strong> BRIDGE Immigration Network, Inc. provides affordable, high-quality immigration support to low-income and underserved immigrant individuals and families. Through education, community workshops, and trusted resources, we increase awareness, help prevent immigration fraud, and empower communities to navigate the immigration system with dignity, confidence, and hope.</p>
 					<p><strong>Vision:</strong> BRIDGE envisions a community where immigrant individuals and families have equitable access to trusted guidance, accurate information, and the resources they need to pursue lawful status, protect their rights, and build stable and thriving lives.</p>
-				</article>
-
-				<article class="post" id="contact">
-					<header>
-						<div class="title">
-							<span class="section-tag">Contact</span>
-							<h2>Connect with BRIDGE</h2>
-							<p>For immigration support, community education, partnerships, or donation questions, please contact the BRIDGE team.</p>
-						</div>
-					</header>
-					<div class="contact-card">
-						<p><strong>Email:</strong> <a href="mailto:team@bridgeimmigrationnetwork.org">team@bridgeimmigrationnetwork.org</a></p>
-						<ul class="actions">
-							<li><a href="mailto:team@bridgeimmigrationnetwork.org?subject=Bridge%20Immigration%20Network%20Website%20Inquiry" class="button large">Email BRIDGE</a></li>
-							<li><a href="https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-17131" class="button large" target="_blank" rel="noopener">Donate to Relief Campaign</a></li>
-						</ul>
-					</div>
 				</article>
 
 				<!-- <article class="post" id="values">
@@ -1292,7 +1175,10 @@
 			<section id="sidebar">
 				<section id="intro">
 					<div class="bridge-mark">
-						<img class="logo-img" src="images/bridge-logo.jpg" alt="Bridge Immigration Network logo" />
+						<div>
+							<strong>BRIDGE</strong>
+							<span>Immigration Network</span>
+						</div>
 					</div>
 					<header>
 						<h2>Bridge Immigration Network</h2>
@@ -1308,21 +1194,19 @@
 					</ul>
 				</section>
 
-				<section class="blurb">
-					<h2>Venezuela Relief</h2>
-					<p>Help provide emergency supplies, hygiene kits, diapers, medical supplies, clean water, and recovery equipment.</p>
-					<ul class="actions">
-						<li><a href="https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-17131" class="button" target="_blank" rel="noopener">Donate</a></li>
-					</ul>
-				</section>
-
 				<!-- <section class="blurb">
 					<h2>Primary Contact</h2>
 					<p><a href="mailto:team@bridgeimmigrationnetwork.org">team@bridgeimmigrationnetwork.org</a></p>
 				</section> -->
 
-				<section id="footer" class="site-footer-card">
-					<p class="copyright">&copy; 2026 Bridge Immigration Network</p>
+				<section id="footer">
+					<ul class="icons">
+						<!-- <li><a href="mailto:team@bridgeimmigrationnetwork.org" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<p class="copyright">&copy; Bridge Immigration Network, Inc.</p>
 				</section>
 			</section>
 
